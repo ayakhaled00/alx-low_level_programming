@@ -1,22 +1,21 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * print_alphabet - Entry point
- * Return:0
- */
-
-void print_alphabet(void)
+* _isupper - checks for uppercase character
+* @c: Variable text
+* Return: Always 0.
+*/
+int _isupper(int c)
 {
-	char c = 'a';
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
 
-	}
-	_putchar('\n');
+ if (c >= 'A' && c <= 'Z')
+ {
+ return (1);
+ }
+ else
+{
+ return (0);
+}
 
 }
 
